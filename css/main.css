@@ -39,19 +39,41 @@ video.fullscreenbackground {
 
 
 /* section__privilege */
-.privilege__row_img {
-    width: 50px;
-    height: 50px;
+.pluses-list {
+    margin: 20px 0;
 }
-.privilege__row_header {
-    height: 60px;
-}
-.privilege__row_text {
-    text-align: left;
-}
-.privilege__row_title {
+.pluses-item {
+    width: 24%;
     display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0 15px;
 }
+
+.pluses-item_in {
+    font: normal 15px/22px "Open Sans", sans-serif;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding: 25px 36px 34px;
+    text-align: center;
+    color: rgba(54, 54, 54, 0.8);
+}
+
+.pluses-item_in .preview {
+    margin: 0 0 19px;
+    height: 58px;
+}
+
+.preview img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+.pluses-item_in h4 {
+    margin: 0 0 13px;
+}
+
 
 
 /* section__numbers */
@@ -107,6 +129,106 @@ video.fullscreenbackground {
 
 
 /* section__scheme */
+.section__scheme {
+    margin: 30px 0;
+}
+.lease-info h2 {
+    margin: 0 0 28px;
+    font: 500 31px/normal "Foros";
+    text-align: center;
+    color: #000;
+}
+.lease-info .subtitle {
+    font: normal normal 16px/28px "Open Sans", sans-serif;
+    text-align: center;
+    color: #363636;
+    max-width: 780px;
+    margin: 0 auto 16px;
+}
+.lease-info_list {
+    margin: 0 -15px;
+    padding: 67px 0 26px;
+    list-style: none;
+    counter-reset: li;
+}
+.lease-info_item {
+    width: 25%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+    counter-increment: li;
+}
+.lease-info_item:first-child:before {
+    top: -19px;
+    left: auto;
+    right: 2px;
+    bottom: auto;
+}
+.lease-info_item:nth-child(2n+1):before {
+    top: -19px;
+    right: 2px;
+    left: auto;
+    bottom: auto;
+}
+.lease-info_item:nth-child(even):before {
+    top: auto;
+    left: auto;
+    bottom: -19px;
+    right: 2px;
+}
+.lease-info_item:before {
+    content: counter(li);
+    background: #FFFFFF;
+    display: inline-block;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -19px;
+    left: 2px;
+    text-align: center;
+    line-height: 46px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+.lease-info-item_in {
+    font: normal normal 15px/22px "Open Sans", sans-serif;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding: 16px 26px 31px;
+    text-align: center;
+    color: rgba(54, 54, 54, 0.8);
+}
+.lease-info-item_in .preview {
+    width: 100%;
+    height: 51px;
+    vertical-align: middle;
+    display: table;
+    margin: 0 0 25px;
+}
+.lease-info-item_in span {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 100%;
+}
+.lease-info-item_in img {
+    vertical-align: middle;
+}
+.lease-info-item_in h4 {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+.lease-info_list:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -134,7 +256,7 @@ video.fullscreenbackground {
     text-align: center;
 }
 .nGY2GThumbnail {
-    width: 230;
+    width: 204px;
 }
 
 
